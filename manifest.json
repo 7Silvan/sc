@@ -1,0 +1,22 @@
+{
+  "name": "Test Screenshot Extension",
+  "version": "0.1",
+  "description": "implementation of test task",
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js", "jquery.min.js"]
+  },
+  "browser_action": {
+    "default_icon": "camera.png",
+    "default_title": "Take a screen shot!"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  },
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "manifest_version": 2
+}
